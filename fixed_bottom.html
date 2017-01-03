@@ -1,0 +1,177 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .fixed_bottom {
+            background-color: #a6202e;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999999;
+        }
+
+        .fixed_bottom .container {
+            position: relative;
+        }
+
+        .fixed_bottom ul {
+            margin-left: 50px;
+        }
+
+        .fixed_bottom ul li {
+            display: block;
+            padding-left: 50px;
+            float: left;
+            color: #fff;
+            padding-top: 18px;
+            padding-bottom: 17px;
+            margin-right: 70px;
+        }
+
+        .fixed_bottom ul li:nth-child(1) {
+            background: url(images/tel-2.png) no-repeat center left;
+        }
+        .fixed_bottom ul li:nth-child(2) {
+            background: url(images/qq-2.png) no-repeat center left;
+        }
+        .fixed_bottom ul li:nth-child(3) {
+            background: url(images/form.png) no-repeat center left;
+        }
+        .fixed_bottom ul li:nth-child(4) {
+            background: url(images/position2.png) no-repeat center left;
+        }
+
+        .back_to_top {
+            position: absolute;
+            right: 75px;
+            bottom: 16px;
+        }
+
+        .back_to_top:before,
+        .back_to_top:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            border: 5px solid;
+            border-top-width: 10px;
+            border-bottom-width: 8px;
+        }
+
+        .back_to_top:before {
+            left: -10px;
+            border-color: transparent #a6202e #a6202e transparent;
+        }
+
+        .back_to_top:after {
+            right: -10px;
+            border-color: transparent transparent #a6202e #a6202e;
+        }
+
+        .back_to_top a {
+            padding: 31px 23px 25px 26px;
+            background-color: #fd7249;
+            color: #fff;
+            font-size: 13px;
+            position: relative;
+        }
+
+        .back_to_top a:before,
+        .back_to_top a:after {
+            content: '';
+            position: absolute;
+        }
+
+        .back_to_top a:before {
+            border-style: solid;
+            border-width: 12px 13px;
+            border-color: transparent transparent #fff transparent;
+            top: 0;
+            left: 50%;
+            margin-left: -12px;
+        }
+
+        .back_to_top a:after {
+            border-style: solid;
+            border-width: 13px 50.5px;
+            border-color: transparent transparent #a6202e transparent;
+            left: 50%;
+            margin-left: -50.5px;
+            bottom: 0;
+        }
+
+        .close_bottom {
+            display: none;
+        }
+
+        .close_bottom a {
+            display: inline;
+            color: #fff;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="fixed_bottom" id="bb">
+    <div class="container">
+        <ul class="clearfix">
+            <li>
+                <a href="#">
+                    <span>咨询热线</span><br>
+                    <span>025-52407966</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>QQ咨询</span><br>
+                    <span>151110708</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>网络预约</span><br>
+                    <span>方便快捷省心省力</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>来院路线</span><br>
+                    <span>交通便捷免费停车</span>
+                </a>
+            </li>
+        </ul>
+        <div class="back_to_top">
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="close_bottom">
+            <a href="javascript:closeDown();">x</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+    function closeDown() {
+        $("#bb").css({"display":"none"});
+    };
+    $(function () {
+        $("#bb").mouseenter(function () {
+            $(".close_bottom").css({"display":"block"});
+        }).mouseleave(function () {
+            $(".close_bottom").css({"display":"none"});
+        });
+        $(".back_to_top > a").on("click",function () {
+            $(window).scrollTop(0);
+        });
+    })
+</script>
+</body>
+</html>
