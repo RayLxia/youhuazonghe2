@@ -1,1 +1,111 @@
 @charset "UTF-8";
+footer {
+    background-color: #fdf1e1;
+    padding-top: 20px;
+    padding-bottom: 21px;
+}
+footer .footer_logo h3 {
+    font-family: "华文新魏";
+    color: #cd0951;
+    font-size: 35px;
+    position: relative;
+    padding-top: 86px;
+    background: url(../images/footer-logo.png) no-repeat top center;
+}
+footer .footer_logo h3:after {
+    content: 'NANJING  MARY MATERNITY HOSPITAL';
+    position: absolute;
+    bottom: -26px;
+    left: 6px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+footer .footer_logo .workTime {
+    position: relative;
+    padding: 11px 29px 11px 35px;
+    background-color: #fff;
+    margin-top: 40px;
+}
+footer .footer_logo .workTime span {
+    font-size: 19px;
+}
+footer .footer_logo .workTime span:nth-child(1),
+footer .footer_logo .workTime span:nth-child(2),
+footer .footer_logo .workTime span:nth-child(3) {
+    padding: 0 6px;
+    position: absolute;
+    background-color: #d13d4d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius:50% ;
+    border-radius: 50%;
+    color: #fff;
+    left: 39px;
+}
+footer .footer_logo .workTime span:nth-child(2) {
+    background-color: #fd7249;
+    left: 56px;
+}
+footer .footer_logo .workTime span:nth-child(3) {
+    background-color: #d13d4d;
+    left: 73px;
+}
+
+footer .footer_logo .workTime span:nth-child(4) {
+    margin-left: 64px;
+}
+footer .footer_logo .workTime p {
+    font-size: 15px;
+    margin-top: 14px;
+    text-align: center;
+}
+footer ul {
+    width: 75%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 98px;
+    padding-top: 37px;
+}
+footer ul li {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+footer ul li a {
+    display: inline;
+}
+footer ul li:nth-child(1) {
+    width: 10%;
+    margin-right: 120px;
+}
+footer ul li:nth-child(2) {
+    width: 18%;
+    margin-right: 94px;
+}
+footer ul li:nth-child(3) {
+    width: 45%;
+}
+footer ul li .title {
+    font-size: 18px;
+}
+footer ul li:nth-child(1) a,
+footer ul li:nth-child(2) .item,
+footer ul li:nth-child(3) p {
+    display: block;
+    padding-left: 20px;
+    margin-top: 22px;
+}
+footer .des {
+    margin-top: 30px;
+}
+footer .des p {
+    text-align: center;
+    color: #adadad;
+    font-size: 12px;
+}
+footer .des p + p {
+    margin-top: 10px;
+}

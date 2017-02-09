@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.nav_left li {
+    width: 255px;
+    margin-bottom: 2px;
+}
+.nav_left li a {
+    padding: 16px 15px 16px 30px;
+    color: #d13d4d;
+    background-color: #F9F3DB;
+    position: relative;
+    font-size: 18px;
+}
+.nav_left li a.current {
+    color: #fff;
+    background: url(../images/jiantou.png) no-repeat 215px 50%;
+    background-color: #d13d4d;
+}
+.nav_left li a:after {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 42%;
+    font-size: 12px;
+}
+.nav_left li:nth-child(1) a:after {
+    content: 'Introduction';
+}
+.nav_left li:nth-child(2) a:after {
+    content: 'Information';
+}
+.nav_left li:nth-child(3) a:after {
+    content: 'Expert team';
+}
+.nav_left li:nth-child(4) a:after {
+    content: 'Technology';
+}
+.nav_left li:nth-child(5) a:after {
+    content: 'Equipment';
+}
+.nav_left li:nth-child(6) a:after {
+    content: 'Environment';
+}
+.nav_left li:nth-child(7) a:after {
+    content: 'Hospital line';
+}
+

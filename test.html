@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moveUp</title>
+    <style>
+        a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="scrollnews" style="height:20px;line-height:20px;overflow:hidden">
+    <a href=" " title=" " target="_blank"> dsfsdfsdfd</a>
+    <a href=" " title=" " target="_blank"> 12312321</a>
+    <a href=" " title=" " target="_blank"> fdsfe3434234dfsdfd</a>
+    <a href=" " title=" " target="_blank"> 哈哈</a>
+    <a href=" " title=" " target="_blank"> 苦需要城村奇才在地d</a>
+</div>
+<script type="text/javascript"> var scrollnews = document.getElementById('scrollnews');
+var lis = scrollnews.getElementsByTagName('a');
+var ml = 0;
+var timer1 = setInterval(function () {
+    var liHeight = lis[0].offsetHeight;
+    var timer2 = setInterval(function () {
+        scrollnews.scrollTop = (++ml);
+        if (ml == liHeight) {
+            clearInterval(timer2);
+            scrollnews.scrollTop = 0;
+            ml = 0;
+            lis[0].parentNode.appendChild(lis[0]);
+        }
+    }, 10);
+}, 5000);
+</script>
+</body>
+</html>
